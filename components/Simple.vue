@@ -19,7 +19,6 @@ export default {
   },
   async fetch() {
     const data = await (await fetch(API)).json();
-    // console.log(data);
     this.description = data.description;
     this.forks = data.forks;
     this.issues = data.open_issues;

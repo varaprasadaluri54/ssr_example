@@ -3,6 +3,7 @@
     <nav>
       <nuxt-link to="/">Home</nuxt-link>
       <nuxt-link to="/about" no-prefetch>About</nuxt-link>
+      <nuxt-link to="/test" no-prefetch>Test</nuxt-link>
     </nav>
     <Nuxt />
   </div>
