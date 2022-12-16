@@ -5,8 +5,7 @@ const consoleObjectKeys = (obj) => {
 };
 
 export default function () {
-  consoleObjectKeys(this);
-
+  // consoleObjectKeys(this);
   // this.extendRoutes((routes) => {
   //   routes.push({
   //     name: "items",
