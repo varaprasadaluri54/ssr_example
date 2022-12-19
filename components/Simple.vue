@@ -8,7 +8,6 @@
 </template>
 
 <script>
-const API = "https://api.github.com/repos/vuejs/vue";
 export default {
   data() {
     return {
@@ -18,7 +17,9 @@ export default {
     };
   },
   async fetch() {
-    const data = await (await fetch(API)).json();
+    const data = await (
+      await fetch("https://api.github.com/repos/vuejs/vue")
+    ).json();
     this.description = data.description;
     this.forks = data.forks;
     this.issues = data.open_issues;
